@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {Link} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import User from './User';
 
 function UserItem({user: {login, avatar_url}}) {
   return (
