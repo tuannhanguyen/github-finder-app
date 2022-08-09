@@ -6,9 +6,10 @@ import GithubContext from '../../context/github/GithubContext'
 function User({match}) {
 
     const {getUser, user} = useContext(GithubContext)
+    const params = useParams()
 
     useEffect(() =>{
-        getUser(match.params.login)
+        getUser(params.login)
     }, [])
 
   return (
